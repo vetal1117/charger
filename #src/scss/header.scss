@@ -1,0 +1,88 @@
+.header {
+	grid-area: header;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
+
+	&__body {
+	grid-column: 2/3;
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	}
+
+	&__content {
+	}
+
+	&__logo {
+	}
+
+	&__title {
+	}
+
+	&__image {
+	}
+
+	&__subtitle {
+	}
+
+	&__text {
+	}
+
+	&__link {
+	}
+
+	&__image-apple {
+	}
+
+	&__subtitle-apple {
+	}
+
+	&__sign-up {
+	}
+
+	&__iphones {
+	}
+
+	&__iphone-black {
+		width: 276px;
+		height: 566px;
+		overflow: hidden;
+		position : relative;
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+
+	}
+
+	&__iphone-white {
+		height: 566px;
+		width: 276px;
+		overflow: hidden;
+		position : relative;
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+}
+.sign-up {
+	&__text {
+	}
+
+	&__inp {
+	}
+
+	&__input {
+	}
+
+	&__btn {
+	}
+}

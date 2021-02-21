@@ -44,6 +44,16 @@ html, body {
 
 }
 .page {
+	display: grid;
+	grid-template: minmax(624px,auto) 1fr minmax(168px,auto) / 1fr;
+	grid-template-areas:
+	"header"
+	"section"
+	"footer";
+	
+}
+.section {
+	grid-area: section;
 	
 }
 //</ОБОЛОЧКА>===========================================================================================================
