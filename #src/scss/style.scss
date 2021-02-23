@@ -44,6 +44,7 @@ html, body {
 
 }
 .page {
+	min-height: 100vh;
 	display: grid;
 	grid-template: minmax(624px,auto) 1fr minmax(168px,auto) / 1fr;
 	grid-template-areas:

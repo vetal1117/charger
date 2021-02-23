@@ -152,6 +152,7 @@ h6 {
 }
 
 .page {
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -192,11 +193,15 @@ h6 {
       grid-template: 1fr / 1fr 1fr;
 }
 
-.header__iphone-black {
-  width: 276px;
-  height: 566px;
-  overflow: hidden;
+.header__iphones {
   position: relative;
+}
+
+.header__iphone-black {
+  padding: 0px 0px 122% 0px;
+  width: 59.1%;
+  overflow: hidden;
+  position: absolute;
 }
 
 .header__iphone-black img {
@@ -210,10 +215,12 @@ h6 {
 }
 
 .header__iphone-white {
-  height: 566px;
-  width: 276px;
+  width: 59.1%;
+  padding: 0px 0px 122% 0px;
   overflow: hidden;
   position: relative;
+  left: 130px;
+  top: 70px;
 }
 
 .header__iphone-white img {

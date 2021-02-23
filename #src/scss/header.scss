@@ -2,7 +2,6 @@
 	grid-area: header;
 	display: grid;
 	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
-
 	&__body {
 	grid-column: 2/3;
 	display: grid;
@@ -40,13 +39,17 @@
 	}
 
 	&__iphones {
-	}
+		position : relative;
+		}
 
 	&__iphone-black {
-		width: 276px;
-		height: 566px;
+		padding: 0px 0px 122% 0px;
+		width: 59.1%;
 		overflow: hidden;
-		position : relative;
+		position: absolute;
+		
+		
+	
 		img {
 			width: 100%;
 			height: 100%;
@@ -54,15 +57,19 @@
 			top: 0;
 			left: 0;
 			object-fit: cover;
+			
 		}
 
 	}
 
 	&__iphone-white {
-		height: 566px;
-		width: 276px;
+		width: 59.1%;
+		padding: 0px 0px 122% 0px;
 		overflow: hidden;
 		position : relative;
+		left: 130px;
+		top: 70px;
+	
 		img {
 			width: 100%;
 			height: 100%;
