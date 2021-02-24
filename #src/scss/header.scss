@@ -2,6 +2,8 @@
 	grid-area: header;
 	display: grid;
 	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
+	@include adaptiv-value("padding-top", 47.6, 10, 0);
+	@include adaptiv-value("padding-bottom", 84, 20, 0);
 	&__body {
 	grid-column: 2/3;
 	display: grid;
@@ -9,6 +11,8 @@
 	}
 
 	&__content {
+		display: grid;
+		grid-auto-flow: row;
 	}
 
 	&__logo {
