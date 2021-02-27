@@ -145,6 +145,11 @@ h6 {
   font-size: inherit;
 }
 
+html,
+body {
+  font-style: 16px;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -199,6 +204,7 @@ h6 {
       grid-template: 1fr/1fr minmax(auto, 935px) 1fr;
   padding-top: calc(10px + 37.6 * ((100vw - 320px) / 1080));
   padding-bottom: calc(20px + 64 * ((100vw - 320px) / 1080));
+  background-color: #63c508;
 }
 
 .header__body {
@@ -216,6 +222,37 @@ h6 {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
+}
+
+.header__title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 56px 1fr;
+  grid-template-columns: 56px 1fr;
+  -ms-grid-rows: 56px 60px;
+  grid-template-rows: 56px 60px;
+      grid-template-areas: "image subtitle" "text text";
+}
+
+.header__image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+.header__subtitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: subtitle;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
 }
 
 .header__iphones {
@@ -243,7 +280,7 @@ h6 {
   width: 59.1%;
   padding: 0px 0px 122% 0px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   left: 130px;
   top: 70px;
 }

@@ -4,6 +4,7 @@
 	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
 	@include adaptiv-value("padding-top", 47.6, 10, 0);
 	@include adaptiv-value("padding-bottom", 84, 20, 0);
+	background-color: rgb(99, 197, 8);
 	&__body {
 	grid-column: 2/3;
 	display: grid;
@@ -13,21 +14,32 @@
 	&__content {
 		display: grid;
 		grid-auto-flow: row;
+	
 	}
 
 	&__logo {
+		
 	}
 
 	&__title {
+		display: grid;
+		grid-template-columns: 56px 1fr;
+		grid-template-rows: 56px 60px;
+		grid-template-areas: "image subtitle"
+									"text text"	;
 	}
 
 	&__image {
+		grid-area: image;
 	}
 
 	&__subtitle {
+		grid-area: subtitle;
+		align-self: center;
 	}
 
 	&__text {
+		grid-area: text;
 	}
 
 	&__link {
@@ -70,7 +82,7 @@
 		width: 59.1%;
 		padding: 0px 0px 122% 0px;
 		overflow: hidden;
-		position : relative;
+		position : absolute;
 		left: 130px;
 		top: 70px;
 	
