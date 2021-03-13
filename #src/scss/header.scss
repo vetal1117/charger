@@ -4,7 +4,13 @@
 	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
 	@include adaptiv-value("padding-top", 47.6, 10, 0);
 	@include adaptiv-value("padding-bottom", 84, 20, 0);
-	background-color: rgb(99, 197, 8);
+	background-image: url(../img/First_screen/mainlayer.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&:hover {
+		background: rgba(24,181,164,0.5);
+		
+	}
 	&__body {
 		grid-column: 2/3;
 		display: grid;
@@ -35,6 +41,7 @@
 		grid-template-areas:
 			"image subtitle"
 			"text text";
+		color: #fff;
 		// row-gap: 26.667%;
 		// column-gap: 10px;
 	}
@@ -50,7 +57,7 @@
 		font-size: 2rem;
 		line-height: 1;
 		font-weight: 400;
-		color: #fff;
+
 		padding-left: 10px;
 		p {
 			font-weight: 600;
@@ -62,7 +69,6 @@
 		font-family: HelveticaNeue;
 		font-size: 1rem;
 		line-height: 1.5;
-		color: #000000;
 		margin-top: 7.71%;
 		margin-bottom: 2.6%;
 	}
@@ -74,23 +80,23 @@
 		display: flex;
 		background-color: #000;
 		text-align: left;
-		max-width: 216px;
+		width: 216px;
+		height: 48px;
 		padding: 8px 0px;
 		justify-content: center;
+		align-items: center;
 		border-radius: 5px;
-		margin-bottom: 13.542% ;
-
-		
+		margin-bottom: 13.542%;
 	}
 
 	&__image-apple {
-		flex: 0 1 15%;
+		flex: 0 0 15%;
 		position: relative;
-		min-height: 35px;
+		min-height: 40px;
 		img {
 			width: 100%;
 			height: 100%;
-			object-fit: contain;
+			object-fit: cover;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -101,11 +107,11 @@
 		padding-left: 16px;
 		font-family: LucidaGrande;
 		font-size: 0.625rem;
-		line-height: 1.9;
+		line-height: 1;
 		font-weight: 400;
 		letter-spacing: -0.035em;
 		color: #ffffff;
-		
+
 		p {
 			font-size: 1.18rem;
 		}
@@ -123,6 +129,8 @@
 		width: 59.1%;
 		overflow: hidden;
 		position: absolute;
+		left: 75px;
+		top: 70px;
 
 		img {
 			width: 100%;
@@ -139,8 +147,8 @@
 		padding: 0px 0px 122% 0px;
 		overflow: hidden;
 		position: absolute;
-		left: 130px;
-		top: 70px;
+		left: 200px;
+		top: 110px;
 
 		img {
 			width: 100%;
@@ -154,14 +162,36 @@
 }
 .sign-up {
 	&__text {
+		font-family: MyriadPro;
+		font-size: 1rem;
+		line-height: 1.5;
+		font-weight: 400;
+		color: #ffffff;
+		margin-bottom: 6px;
 	}
 
 	&__inp {
 	}
 
 	&__input {
+		width: 63.4%;
+		height: 48px;
+		background: transparent;
+		border: 2px solid white;
+		padding-left: 10px;
+		&::placeholder {
+			color: white;
+		}
 	}
 
 	&__btn {
+		padding: 12px 35px;
+		font-family: MyriadPro;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #3cd072;
+		border-radius: 5px;
+		margin-left: 24px;
 	}
 }
