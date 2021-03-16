@@ -7,9 +7,12 @@
 	background-image: url(../img/First_screen/mainlayer.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	
+	
 	&:hover {
-		background: rgba(24,181,164,0.5);
-		
+		opacity: 0.9;
+
 	}
 	&__body {
 		grid-column: 2/3;
@@ -35,42 +38,7 @@
 	}
 
 	&__title {
-		display: grid;
-		grid-template-columns: 56px 1fr;
-		grid-template-rows: 56px minmax(60px, max-content);
-		grid-template-areas:
-			"image subtitle"
-			"text text";
-		color: #fff;
-		// row-gap: 26.667%;
-		// column-gap: 10px;
-	}
 
-	&__image {
-		grid-area: image;
-	}
-
-	&__subtitle {
-		grid-area: subtitle;
-		align-self: center;
-		font-family: MyriadPro;
-		font-size: 2rem;
-		line-height: 1;
-		font-weight: 400;
-
-		padding-left: 10px;
-		p {
-			font-weight: 600;
-		}
-	}
-
-	&__text {
-		grid-area: text;
-		font-family: HelveticaNeue;
-		font-size: 1rem;
-		line-height: 1.5;
-		margin-top: 7.71%;
-		margin-bottom: 2.6%;
 	}
 
 	&__link {
@@ -90,7 +58,7 @@
 	}
 
 	&__image-apple {
-		flex: 0 0 15%;
+		flex: 0 1 15%;
 		position: relative;
 		min-height: 40px;
 		img {
@@ -140,6 +108,9 @@
 			left: 0;
 			object-fit: cover;
 		}
+		@media (max-width: 960px) {
+			left: 10px;
+		}
 	}
 
 	&__iphone-white {
@@ -158,6 +129,9 @@
 			left: 0;
 			object-fit: cover;
 		}
+		@media (max-width: 960px) {
+			left: 135px;
+		}
 	}
 }
 .sign-up {
@@ -171,6 +145,10 @@
 	}
 
 	&__inp {
+		display: flex;
+		flex-wrap: nowrap;
+
+
 	}
 
 	&__input {
@@ -179,19 +157,23 @@
 		background: transparent;
 		border: 2px solid white;
 		padding-left: 10px;
+		min-width: 140px;
 		&::placeholder {
 			color: white;
 		}
 	}
 
 	&__btn {
-		padding: 12px 35px;
+		padding: 0.75em 2.2em;
 		font-family: MyriadPro;
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 1rem;
+		line-height: 1.5;
 		font-weight: 600;
 		color: #3cd072;
 		border-radius: 5px;
 		margin-left: 24px;
+		min-width: 140px;		
 	}
 }
+
+

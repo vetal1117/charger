@@ -32,7 +32,41 @@ $md4: 479.98;
 html, body {
 	font-style: 16px;
 }
+.title {
+	display: grid;
+	grid-template-columns: 56px 1fr;
+	grid-template-rows: 56px minmax(60px, max-content);
+	grid-template-areas:
+		"image subtitle"
+		"text text";
+	color: #fff;
+	// row-gap: 26.667%;
+	// column-gap: 10px;
+	&__image {
+		grid-area: image;
+	}
+	&__subtitle {
+		grid-area: subtitle;
+		align-self: center;
+		font-family: MyriadPro;
+		font-size: 2rem;
+		line-height: 1;
+		font-weight: 400;
 
+		padding-left: 10px;
+		p {
+			font-weight: 600;
+		}
+	}
+	&__text {
+		grid-area: text;
+		font-family: HelveticaNeue;
+		font-size: 1rem;
+		line-height: 1.5;
+		margin-top: 7.71%;
+		margin-bottom: 2.6%;
+	}
+}
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
