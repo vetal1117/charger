@@ -1,3 +1,86 @@
 .section-one {
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 935px) 1fr;
+	background-color: #f0f0f0;
 
+	&__body {
+		grid-column: 2/3;
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
+		padding-top: 140px;
+		padding-bottom: 90px;
+	}
+
+	&__iphones {
+		position: relative;
+		grid-row: 1/3;
+		// padding-right: 30px;
+		// right: 80px;
+	}
+
+	&__iphone-white {
+		width: 59.1%;
+		padding: 0px 0px 91% 0px;
+		overflow: hidden;
+		position: absolute;
+		bottom: -117px;
+		left: -11px;
+		transform: rotate(-35deg);
+		z-index: 3;
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: contain;
+		}
+	}
+
+	&__iphone-black {
+		position: absolute;
+		top: -168px;
+		left: 80px;
+		transform: rotate(-35deg);
+		padding: 0px 0px 91% 0px;
+		width: 59.1%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: contain;
+		}
+	}
+
+	&__title-one {
+	}
+
+	&__title-two {
+		grid-column: 2 / 3;
+	}
+}
+.title {
+	&__image {
+	}
+	&__subtitle {
+		&_g {
+			font-family: MyriadPro;
+			font-size: 1.5rem;
+			line-height: 1.5;
+			font-weight: 600;
+			color: #3cd072;
+		}
+	}
+	&__text {
+		&_b {
+			font-family: HelveticaNeue;
+			font-size: 1rem;
+			line-height: 1.5;
+			font-weight: 400;
+			color: #000000;
+		}
+	}
 }

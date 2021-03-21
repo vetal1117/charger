@@ -29,7 +29,8 @@ $md4: 479.98;
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
-html, body {
+html,
+body {
 	font-style: 16px;
 }
 .title {
@@ -67,6 +68,54 @@ html, body {
 		margin-bottom: 2.6%;
 	}
 }
+.telephone {
+	position: relative;
+	&__iphone-black {
+		padding: 0px 0px 122% 0px;
+		width: 59.1%;
+		overflow: hidden;
+		position: absolute;
+		left: 75px;
+		top: 70px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+		@media (max-width: 960px) {
+			left: 10px;
+		}
+	}
+
+	&__iphone-white {
+		width: 59.1%;
+		padding: 0px 0px 122% 0px;
+		overflow: hidden;
+		position: absolute;
+		left: 200px;
+		top: 110px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+		@media (max-width: 960px) {
+			left: 135px;
+		}
+	}
+
+	&_r {
+		
+	}
+}
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -75,21 +124,18 @@ html, body {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
-
 }
 .page {
 	min-height: 100vh;
 	display: grid;
-	grid-template: minmax(624px,auto) 1fr minmax(168px,auto) / 1fr;
+	grid-template: minmax(624px, auto) 1fr minmax(168px, auto) / 1fr;
 	grid-template-areas:
-	"header"
-	"section"
-	"footer";
-	
+		"header"
+		"section"
+		"footer";
 }
 .section {
 	grid-area: section;
-	
 }
 //</ОБОЛОЧКА>===========================================================================================================
 
